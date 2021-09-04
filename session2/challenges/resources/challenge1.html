@@ -1,22 +1,175 @@
 <html>
+
 <head>
     <title>Your Name Goes Here - Challenge 1</title>
 
     <!-- Internal CSS styling -->
     <style>
-
         /* DO NOT MODIFY THIS */
+        
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+        
         * {
             margin: 0;
             padding: 0;
         }
-
         /* Add your CSS script below */
-
+        
+        .outer-box {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 15px;
+        }
+        
+        .header-box {
+            background-color: black;
+            color: white;
+            border: 2px solid blue;
+            border-width: thick;
+            border-top-style: dotted;
+            border-bottom-style: dotted;
+            padding: 10px;
+            line-height: 1.5em;
+            margin: 20px;
+        }
+        
+        .header-box h1 {
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+            text-transform: uppercase;
+            font-style: italic;
+            font-weight: 800;
+            text-decoration: underline;
+            letter-spacing: 0.5em;
+            word-spacing: 1em;
+            padding-bottom: 10px;
+        }
+        
+        body {
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightyellow;
+        }
+        
+        .middle-box {
+            background-color: yellow;
+            color: black;
+            border: 2px dotted red;
+            border-width: 10px;
+            padding: 10px;
+            line-height: 1.5em;
+            margin: 20px;
+        }
+        
+        .middle-box h1 {
+            width: 50%;
+            margin: auto;
+            padding: 15px;
+            background-color: pink;
+            text-align: center;
+            border-style: dotted;
+            border-color: blue;
+            margin-bottom: 15px;
+        }
+        
+        .middle-box p {
+            line-height: 2em;
+        }
+        
+        a {
+            text-decoration: none;
+            color: orangered;
+        }
+        
+        a:hover {
+            color: blue;
+            background-color: yellow;
+        }
+        
+        .bottom-box {
+            border: 3px solid green;
+            background-color: rgb(115, 255, 119);
+            padding: 10px;
+            border-radius: 30px;
+            width: 95%;
+        }
+        
+        .bottom-box h2 {
+            padding-bottom: 10px;
+            text-align: center;
+            font-family: Georgia, "Times New Roman", Times, serif;
+        }
+        
+        .bottom-box ul {
+            list-style-position: inside;
+            list-style-image: url("images/justin_list_button.png");
+        }
+        
+        .bottom-box li {
+            border-bottom: dotted 2px black;
+            padding-bottom: 5px;
+            padding-top: 5px;
+        }
+        
+        .love-box {
+            border: 2px solid purple;
+            border-width: thick;
+            width: 95%;
+            margin-top: 20px;
+            padding: 20px;
+        }
+        
+        .love-box h2 {
+            text-align: center;
+            border: 2px dotted red;
+            background-color: pink;
+            border-width: 3px;
+            margin-bottom: 30px;
+        }
+        
+        .form-field {
+            padding-bottom: 15px;
+        }
+        
+        .form-field label {
+            display: block;
+        }
+        
+        .form-field input[type="text"],
+        .form-field textarea {
+            width: 60%;
+            padding: 10px;
+        }
+        
+        .button {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: x-large;
+        }
+        
+        .footer-box {
+            width: 100%;
+            background-color: grey;
+            color: white;
+            text-align: center;
+            font-size: medium;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
-<body>
 
+<body>
     <!--
         DO NOT MODIFY the baseline HTML script given to you!
         For example,
@@ -25,69 +178,79 @@
     -->
 
     <div class="outer-box">
-
         <div class="header-box">
             <h1>Justin Bieber</h1>
             <p>
-                Justin Drew Bieber is a Canadian singer and songwriter. Discovered at age 13 by talent manager Scooter Braun after he had watched his YouTube cover song videos, Bieber was signed to RBMG Records in 2008. 
+                Justin Drew Bieber is a Canadian singer and songwriter. Discovered at age 13 by talent manager Scooter Braun after he had watched his YouTube cover song videos, Bieber was signed to RBMG Records in 2008.
             </p>
         </div>
-
 
         <div class="middle-box">
             <h1>Early Life</h1>
             <p>
-                Bieber was born on March 1, 1994, in London, Ontario, at St Joseph's Hospital, and was raised in Stratford, Ontario. He is the only child of Jeremy Jack Bieber and Pattie Mallette, who were never married. Mallette's mother Diane and stepfather Bruce helped her raise her son. Bieber's ancestry includes French-Canadian, Irish, English, Scottish, and German.
+                Bieber was born on March 1, 1994, in London, Ontario, at St Joseph's Hospital, and was raised in Stratford, Ontario. He is the only child of Jeremy Jack Bieber and Pattie Mallette, who were never married. Mallette's mother Diane and stepfather Bruce helped
+                her raise her son. Bieber's ancestry includes French-Canadian, Irish, English, Scottish, and German.
             </p>
 
-            <p>
-                For more information, visit <a href="https://en.wikipedia.org/wiki/Justin_Bieber" target="_blank">this Wiki page</a> and read!
-            </p>
-        </div>
+            <p style="
+            background-color: lightblue;
+            text-align: center;
+            font-style: italic;
+          ">
+                For more information, visit
+                <a href="https://en.wikipedia.org/wiki/Justin_Bieber" target="_blank">this Wiki page</a
+          >
+          and read!
+        </p>
+      </div>
 
-        <div class="bottom-box">
-            <h2>Describe Justin</h2>
-            <ul>
-                <li>Talented</li>
-                <li>Handsome</li>
-                <li>He is single married</li>
-            </ul>
-        </div>
+      <div class="bottom-box">
+        <h2>Describe Justin</h2>
+        <ul>
+          <li>Talented</li>
+          <li>Handsome</li>
+          <li>
+            He is
+            <span
+              style="
+                font-style: italic;
+                text-decoration: line-through;
+                color: red;
+              "
+              >single</span
+            >
+            <span>married</span>
+          </li>
+        </ul>
+      </div>
 
-        <div class="love-box">
-            <h2>Send My Love</h2>
-            
-            <form>
+      <div class="love-box">
+        <h2>Send My Love</h2>
 
-                <div class="form-field">
-                    <label>Name: </label>
-                    <input type="text" name="myname">
-                </div>
+        <form>
+          <div class="form-field">
+            <label>Name: </label>
+            <input type="text" name="myname" />
+          </div>
 
-                <div class="form-field">
-                    <label>Email: </label>
-                    <input type="text" name="email">
-                </div>
+          <div class="form-field">
+            <label>Email: </label>
+            <input type="text" name="email" />
+          </div>
 
-                <div class="form-field">
-                    <label>Love Letter:</label>
-                    <textarea name="loveletter"></textarea>
-                </div>
+          <div class="form-field">
+            <label>Love Letter:</label>
+            <textarea name="loveletter"></textarea>
+          </div>
 
-                <input type="submit" class="button" value="Send My Love">
-
-            </form>
-
-        </div>
-
+          <input type="submit" class="button" value="Send My Love" />
+        </form>
+      </div>
     </div>
 
     <!-- Footer -->
     <div class="footer-box">
-        <p>
-            Copyright &copy; 2020 Your Name Goes Here
-        </p>
+      <p>Copyright &copy; 2020 Your Name Goes Here</p>
     </div>
-    
-</body>
+  </body>
 </html>
